@@ -1,0 +1,147 @@
+#main {
+  background-color: #fafafa;
+  width: 100vw;
+  height: 100vh;
+}
+
+#wrapper {
+  display: grid;
+  grid-template-areas:
+    ". ."
+    "calculator details"
+    ". .";
+  gap: 10em;
+  justify-content: center;
+  align-content: center;
+  align-items: baseline;
+}
+
+#details {
+  grid-area: details;
+  font-size: larger;
+  background-color: #e9f4fe;
+  padding: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+
+#calculator {
+  display: grid;
+  grid-template-areas:
+  "display display display display"
+  "n7 n8 n9 divide"
+  "n4 n5 n6 multiply"
+  "n1 n2 n3 minus"
+  "n0 dot equal plus"
+  ". . clear delete";
+  gap: 5px;
+  justify-content: center;
+
+  background-color: #efefef;
+  border: 2px solid black;
+  padding: 1em;
+  font-size: larger;
+  grid-area: calculator;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+
+#calculator #display {
+  resize: none;
+  padding: 5px;
+  font-size: larger;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: #f9f9ed;
+}
+
+#calculator > button {
+  font-size: larger;
+  max-width: 3em;
+  min-width: 3em;
+  border: 1px solid black;
+  background-color: #fefefe;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+#display {
+  grid-area: display;
+  font-size: larger;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+#n7 {
+  grid-area: n7;
+}
+
+#n8 {
+  grid-area: n8;
+}
+
+#n9 {
+  grid-area: n9;
+}
+
+#insert-divide {
+  grid-area: divide;
+}
+
+#n4 {
+  grid-area: n4;
+}
+
+#n5 {
+  grid-area: n5;
+}
+
+#n6 {
+  grid-area: n6;
+}
+
+#insert-multiply {
+  grid-area: multiply;
+}
+
+#n1 {
+  grid-area: n1;
+}
+
+#n2 {
+  grid-area: n2;
+}
+
+#n3 {
+  grid-area: n3;
+}
+
+#insert-minus {
+  grid-area: minus;
+}
+
+#n0 {
+  grid-area: n0;
+}
+
+#insert-decimal-point {
+  grid-area: dot;
+}
+
+#equal {
+  grid-area: equal;
+}
+
+#insert-plus {
+  grid-area: plus;
+}
+
+#delete {
+  grid-area: delete;
+}
+
+#clear {
+  grid-area: clear;
+}
